@@ -5,12 +5,10 @@ const pokemonReducer = (state = {}, action) => {
     let nextState = Object.assign({}, state);
     switch(action.type){
       case RECEIVE_ALL_POKEMON:
-        return action.pokemon
+        return action.pokemon;
       default:
         return state;
     }
-   
-  
 }
 
 export default pokemonReducer;
